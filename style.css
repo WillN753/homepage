@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height:100%;
+}
+body{
+    margin:0;
+    background:#9f00ff;
+    background-image:url("img/worn-graffiti-brick-wall.jpg");
+    background-size:cover;
+    background-position: top;
+    text-align: center;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding:0 30px
+}
+h1{
+    margin-top:50px;
+    margin-bottom:50px;
+    font-size:80px;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:#000
+
+}
+a{
+    text-decoration: none;
+}
+#clock {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    color:#fff
+}
+
+.center{
+    margin-top: 250px;
+}
+
+/*
+=================================================
+SEARCH
+=================================================
+*/
+form{
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+}
+input{
+    width:100%;
+    font-size:32px;
+    margin:5px 0;
+    float:left;
+    border:none;
+    padding:10px;
+    outline:none;
+}
+.search-bar{
+    width:80%;
+    border-radius:15px;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    border:3px solid #000;
+    color:#000;
+}
+.submit-button{
+    width:13%;
+    background:#808080;
+    color:#000;
+    border-radius:15px;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    border:3px solid #000;
+}
+/*
+=================================================
+BOOKMARKS
+=================================================
+*/
+.bookmarks{
+    padding:30px;
+    clear:both;
+}
+.bookmarks i{
+    font-size:24px;
+    margin:0 30px;
+    color:#000;
+    line-height:32px;
+    transition:.2s;
+    text-decoration:none;
+    cursor: pointer;
+}
+.bookmarks i:hover{
+    color:#fff;
+    font-size:28px;
+    line-height:26px;
+
+}
+ 
+/*
+=================================================
+CALCULATOR
+=================================================
+*/
+.calculator{
+    position:absolute;
+    bottom:50px;
+    right:50px;
+}
+#calc{
+    transition:.2s;
+    opacity:0;
+}
+
+/*
+=================================================
+POST-IT NOTE
+=================================================
+*/
+#note{
+    width:250px;
+    height:250px;
+    resize: none;
+    background:#F3F19D;
+    padding:15px;
+    border:none;
+    position: absolute;
+    bottom:50px;
+    left:50px;
+    font-family:sans-serif;
+    outline:none;
+    transition:.2s;
+    opacity:0;
+}
+
+/*
+=================================================
+JACKIE
+=================================================
+*/
+#notes{
+    opacity:0;
+    transition:.2s;
+}
+.post-it{
+    width:200px;
+    height:200px;
+    resize: none;
+    margin:10px;
+    background:#fff;
+    padding:15px;
+    border:none;
+    font-family:sans-serif;
+    outline:none;
+}
+
+@media only screen and (max-width: 900px) {
+    h1{
+        margin-top:50px;
+        font-size:100px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1{
+        margin-top:50px;
+        font-size:75px;
+    }
+    .bookmarks i{
+    margin:0 15px;
+    }
+    .twitter-wrapper{
+        padding-top:40px;
+    }
+}
+
+/*
+=================================================
+WEATHER WIDGET
+=================================================
+*/
+.weatherwidget-io{ 
+    color:#000;
+    width: 100%;
+    margin-left:0;
+    margin-right:0;
+}
